@@ -10,7 +10,8 @@
 Model Understanding with Captum
 ===============================
 
-Follow along with the video below or on `youtube <https://www.youtube.com/watch?v=Am2EF9CLu-g>`__.
+Follow along with the video below or on `youtube <https://www.youtube.com/watch?v=Am2EF9CLu-g>`__. Download the notebook and corresponding files 
+'here <https://pytorch-tutorial-assets.s3.amazonaws.com/youtube-series/video7.zip>`__.
 
 .. raw:: html
 
