@@ -454,9 +454,11 @@ print(y)
 # .. note::
 #     The following code cell throws a runtime error. This is expected.
 # 
+# ::
+# 
+#    a = torch.linspace(0., 2. * math.pi, steps=25, requires_grad=True)
+#    torch.sin_(a)
 #
-# a = torch.linspace(0., 2. * math.pi, steps=25, requires_grad=True)
-# torch.sin_(a)
 
 
 #########################################################################
@@ -500,11 +502,15 @@ print(prf.key_averages().table(sort_by='self_cpu_time_total'))
 # the derivative of every output with respect to every input, called the
 # *Jacobian:*
 # 
-# :raw-latex:`\begin{align}J=\left(\begin{array}{ccc}
-#    \frac{\partial y_{1}}{\partial x_{1}} & \cdots & \frac{\partial y_{1}}{\partial x_{n}}\\
-#    \vdots & \ddots & \vdots\\
-#    \frac{\partial y_{m}}{\partial x_{1}} & \cdots & \frac{\partial y_{m}}{\partial x_{n}}
-#    \end{array}\right)\end{align}`
+# .. math::
+#
+#      J
+#      =
+#      \left(\begin{array}{ccc}
+#      \frac{\partial y_{1}}{\partial x_{1}} & \cdots & \frac{\partial y_{1}}{\partial x_{n}}\\
+#      \vdots & \ddots & \vdots\\
+#      \frac{\partial y_{m}}{\partial x_{1}} & \cdots & \frac{\partial y_{m}}{\partial x_{n}}
+#      \end{array}\right)
 # 
 # If you have a second function, :math:`l=g\left(\vec{y}\right)` that
 # takes m-dimensional input (that is, the same dimensionality as the
