@@ -106,9 +106,11 @@ To install Captum in an Anaconda or pip virtual environment, use the
 appropriate command for your environment below:
 
 With ``conda``:
+
 ``conda install pytorch torchvision captum -c pytorch``
 
 With ``pip``:
+
 ``pip install torch torchvision captum``
 
 Restart this notebook in the environment you set up, and you’re ready to
